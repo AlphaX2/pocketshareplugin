@@ -13,7 +13,7 @@ ShareDialog {
         console.log(typeof(root.content.linkTitle))
         console.log(typeof(shareItem))
 
-        loggedIn = shareItem.checkLogin()
+        loggedIn = shareItem.check()
     }
 
     onAccepted: {
@@ -36,7 +36,7 @@ ShareDialog {
 
             DialogHeader {
                 id: header
-                title: "Freigeben"
+                title: "Share"
             }
 
             TextField {
@@ -62,7 +62,7 @@ ShareDialog {
         }
     }
 
-    // siehe auch https://github.com/nemomobile/transfer-engine/blob/master/src/transferengine.cpp Zeile 840!
+    // check also: https://github.com/nemomobile/transfer-engine/blob/master/src/transferengine.cpp on ~840!
 
     SailfishShare {
         id: shareItem

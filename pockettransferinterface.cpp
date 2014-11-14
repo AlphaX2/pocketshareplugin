@@ -48,8 +48,7 @@ void PocketTransferInterface::cancel()
     qDebug() << "here could cancel happening";
 }
 
-//bool PocketTransferInterface::checkLogin()
-//{
-//    qDebug() << "prüfe Login";
-//    return true;
-//}
+void PocketTransferInterface::check()
+{
+    qDebug() << "check is recognized";
+}

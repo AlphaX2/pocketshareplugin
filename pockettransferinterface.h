@@ -18,7 +18,7 @@ public:
 public Q_SLOTS:
     void start();
     void cancel();
-    // bool checkLogin();
+    void check();
 };
 
 #endif // POCKETTRANSFERINTERFACE_H
