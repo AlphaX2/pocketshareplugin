@@ -5,6 +5,8 @@ import Sailfish.TransferEngine 1.0
 ShareDialog {
     id: root
 
+    property bool loogedIn: false
+
     Component.onCompleted: {
         console.log(root.content)
         console.log(root.content.status)
@@ -13,7 +15,7 @@ ShareDialog {
         console.log(typeof(root.content.linkTitle))
         console.log(typeof(shareItem))
 
-        loggedIn = shareItem.check()
+        shareItem.cancel()
     }
 
     onAccepted: {
